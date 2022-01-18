@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import FirstStep from './Component/FirstStep';
 import SecondStep from './Component/SecondStep';
@@ -7,8 +6,6 @@ import { Stepper, StepLabel, Step } from '@material-ui/core';
 import { multiStepContext } from './StepContext';
 import { useContext } from 'react';
 import DisplayData from './Component/DisplayData';
-
-
 
 function App() {
   const { currentStep, finalData } = useContext(multiStepContext);
@@ -46,9 +43,8 @@ function App() {
           </Stepper>
         </div>
         {showStep(currentStep)}
-        <DisplayData/>
+        <DisplayData />
       </div>
-   
     </div>
   );
 }
